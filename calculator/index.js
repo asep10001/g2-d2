@@ -26,7 +26,7 @@
       numHasil = "";
     } else {
       console.log(this.outerHTML)
-      numSekarang = this.getAttribute("data-angka");
+      numSekarang += this.getAttribute("data-angka");
       
     }
   

@@ -3,6 +3,70 @@
     padding:0px;
 }
 
+html {
+    background: linear-gradient(#c8b954, transparent);
+}
+
+.uk-container {
+    border: 0.3px solid #00000024;
+    border-radius: 20px;
+}
+
 h1, .warning{
     text-align: center;
 }
+
+.uk-container{
+    margin: 25em;
+}
+
+.uk-column-1-2, .uk-column-1-4{
+    align-items: center;
+}
+
+div{
+    &#col-num {
+        margin-top: 10px !important;
+    }
+}
+
+.num, .ops, #clear{
+    height: 3em;
+}
+
+#reset-div, #viewer-div{
+    margin-left: -16px;
+}
+
+button{
+    background: #f1f3f4;
+    border-radius: 10px;
+    border: 0.1px solid salmon;
+    &#reset{
+      background:#a4acbba1;
+      margin: 10px 0 30px 0;
+      height: 3em;
+      &:hover{
+          background: #aeacac;
+      }
+    }
+    &:hover{
+        background: #e6e6e6;
+    }
+    &.ops{
+        background: #a4acbba1;
+        &:hover{
+            background: #aeacac;
+        }
+    }
+    &#clear{
+        background: #a4acbba1;
+        &:hover{
+            background: #aeacac;
+        }
+    }
+    &#equals{
+        background: #4285f4;
+    }
+}
+
