@@ -1,6 +1,7 @@
 *{
     margin:0px;
     padding:0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 html {
@@ -10,6 +11,7 @@ html {
 .uk-container {
     border: 0.3px solid #00000024;
     border-radius: 20px;
+    box-shadow: -4px -4px 5px 0px rgba(196,133,217,0.98);
 }
 
 h1, .warning{
@@ -36,6 +38,7 @@ div{
 
 #reset-div, #viewer-div{
     margin-left: -16px;
+
 }
 
 button{
@@ -61,12 +64,24 @@ button{
     }
     &#clear{
         background: #a4acbba1;
+        padding-left: 0px;
+        height: auto;
         &:hover{
             background: #aeacac;
         }
     }
     &#equals{
         background: #4285f4;
+        &:hover{
+            background:#3367bc;        
+        }
+            
     }
 }
 
+#viewer-div{
+    background: #f1f3f4;
+    border-radius: 10px;
+    border: 0.1px solid salmon;
+    font-size: 2em;
+}
