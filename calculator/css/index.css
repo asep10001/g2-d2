@@ -2,4 +2,8 @@
   margin: 0px;
   padding: 0px;
 }
+
+h1, .warning {
+  text-align: center;
+}
 /*# sourceMappingURL=index.css.map */
