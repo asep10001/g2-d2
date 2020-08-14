@@ -78,10 +78,21 @@
     if (!isFinite(numHasil)) {
       if (isNaN(numHasil)) {//jika nilai hasil bukan angka
         numHasil = "Yah Rusak deh";
+        el("#container").classList.add("animate__bounce");
+        el("#container").classList.add("animate__hinge");
+        el("#container").classList.add("show");
+        document.querySelector("body").appendChild(document.createElement("h2")).appendChild(el("#reset"));
+        var h2 = document.querySelector("h2");   // Get the first <h1> element in the document
+        var att = document.createAttribute("class");      // Create a "class" attribute
+        let button = document.querySelector("h2 button#reset");
+        att.value = "democlass";                        // Set the value of the class attribute
+        h2.setAttributeNode(att);
+        button.setAttribute("style", "display:inline;")
       } else {
-        numHasil = "Nah ... ini nih";
-        el("#calculator").classList.add("broken");//efek animasi kalkulator rusak
-        el("#reset").classList.add("show"); // efek animasi untuk mereset kalkulator
+        numHasil = "JANGAN PENCET SAMA DENGAN LAGI";
+        el("#calculator").classList.add("animate__animated");//efek animasi kalkulator rusak
+        el("#calculator").classList.add("animate__bounce");//efek animasi kalkulator rusak
+     // efek animasi untuk mereset kalkulator
       }
     }
   
