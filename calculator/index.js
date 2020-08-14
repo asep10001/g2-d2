@@ -88,6 +88,12 @@
         att.value = "democlass";                        // Set the value of the class attribute
         h2.setAttributeNode(att);
         button.setAttribute("style", "display:inline;")
+        let buttonDisabled = document.querySelectorAll("button");
+
+        for(let i = 0; i < buttonDisabled.length; i++){
+            buttonDisabled[i].disabled = true;
+        }
+        button.disabled =false;
       } else {
         numHasil = "JANGAN PENCET SAMA DENGAN LAGI";
         el("#calculator").classList.add("animate__animated");//efek animasi kalkulator rusak
